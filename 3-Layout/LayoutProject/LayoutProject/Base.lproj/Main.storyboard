@@ -16,28 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Layout Projesi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-OV-Ip5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layout Projesi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-OV-Ip5">
                                 <rect key="frame" x="156" y="66" width="128" height="25.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25.333333333333329" id="5V0-Ht-2T7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ankara" translatesAutoresizingMaskIntoConstraints="NO" id="YTW-Jd-Pqt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ankara" translatesAutoresizingMaskIntoConstraints="NO" id="YTW-Jd-Pqt">
                                 <rect key="frame" x="23" y="110" width="394" height="312"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="198" id="CHf-9S-fOx"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="312" id="OmV-tS-CVe"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Co8-OV-Ip5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-22" id="CHE-oQ-zo0"/>
-                            <constraint firstItem="YTW-Jd-Pqt" firstAttribute="top" secondItem="Co8-OV-Ip5" secondAttribute="bottom" constant="52.666666666666657" id="cBT-f2-Bn0"/>
-                            <constraint firstItem="YTW-Jd-Pqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nTE-UH-swQ"/>
-                            <constraint firstItem="Co8-OV-Ip5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="149" id="rrF-LT-sTo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YTW-Jd-Pqt" secondAttribute="trailing" constant="10" id="uQ4-DC-e88"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YTW-Jd-Pqt" secondAttribute="bottom" constant="466" id="Jeq-BN-kso"/>
+                            <constraint firstItem="Co8-OV-Ip5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ScT-Zi-CHU"/>
+                            <constraint firstItem="Co8-OV-Ip5" firstAttribute="centerX" secondItem="YTW-Jd-Pqt" secondAttribute="centerX" id="h0u-YZ-0ca"/>
+                            <constraint firstItem="YTW-Jd-Pqt" firstAttribute="top" secondItem="Co8-OV-Ip5" secondAttribute="bottom" constant="18.666666666666671" id="sZA-0e-IAx"/>
+                            <constraint firstItem="YTW-Jd-Pqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="wOI-zz-wLR"/>
+                            <constraint firstItem="Co8-OV-Ip5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-58" id="zBj-f3-O4e"/>
                         </constraints>
                     </view>
                 </viewController>

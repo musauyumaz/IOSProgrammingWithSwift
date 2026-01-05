@@ -16,18 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birinci View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piK-OP-BEK">
-                                <rect key="frame" x="92" y="153" width="209" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birinci View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTf-tb-c2u">
-                                <rect key="frame" x="92" y="153" width="209" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-fN-hEu">
                                 <rect key="frame" x="73" y="596" width="247" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -37,30 +25,38 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4gW-0x-IP1">
-                                <rect key="frame" x="55" y="223" width="283" height="34"/>
+                                <rect key="frame" x="55" y="254" width="283" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-fo-EdS">
-                                <rect key="frame" x="153" y="308" width="87" height="35"/>
+                                <rect key="frame" x="153" y="334" width="87" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Check It"/>
+                                <connections>
+                                    <action selector="btnCheckItClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRS-bO-WvS"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTf-tb-c2u">
+                                <rect key="frame" x="101" y="186" width="191.33333333333337" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="piK-OP-BEK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-19" id="447-BS-JYX"/>
-                            <constraint firstItem="Dmd-fo-EdS" firstAttribute="top" secondItem="4gW-0x-IP1" secondAttribute="bottom" constant="51" id="4JM-g9-Dfc"/>
-                            <constraint firstItem="gTf-tb-c2u" firstAttribute="leading" secondItem="piK-OP-BEK" secondAttribute="leading" id="4Zh-eJ-F7x"/>
-                            <constraint firstItem="gTf-tb-c2u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IrN-mz-ccF"/>
-                            <constraint firstItem="gTf-tb-c2u" firstAttribute="centerX" secondItem="4gW-0x-IP1" secondAttribute="centerX" id="Utv-Tq-sZt"/>
-                            <constraint firstItem="Dmd-fo-EdS" firstAttribute="centerX" secondItem="fc6-fN-hEu" secondAttribute="centerX" id="XTX-Nl-bwk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fc6-fN-hEu" secondAttribute="bottom" constant="153" id="YDV-Na-7Qc"/>
-                            <constraint firstItem="4gW-0x-IP1" firstAttribute="centerX" secondItem="Dmd-fo-EdS" secondAttribute="centerX" id="kB4-6f-PY1"/>
-                            <constraint firstItem="4gW-0x-IP1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="lWN-zp-kxQ"/>
-                            <constraint firstItem="4gW-0x-IP1" firstAttribute="top" secondItem="piK-OP-BEK" secondAttribute="bottom" constant="43" id="mno-I2-oWi"/>
-                            <constraint firstItem="piK-OP-BEK" firstAttribute="baseline" secondItem="gTf-tb-c2u" secondAttribute="baseline" id="zdM-n7-HQ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fc6-fN-hEu" secondAttribute="bottom" constant="153" id="5sa-fd-oMa"/>
+                            <constraint firstItem="4gW-0x-IP1" firstAttribute="centerX" secondItem="Dmd-fo-EdS" secondAttribute="centerX" id="7c5-nR-Wn7"/>
+                            <constraint firstItem="4gW-0x-IP1" firstAttribute="top" secondItem="gTf-tb-c2u" secondAttribute="bottom" constant="41" id="KYU-TN-G7C"/>
+                            <constraint firstItem="gTf-tb-c2u" firstAttribute="centerX" secondItem="4gW-0x-IP1" secondAttribute="centerX" id="KcN-qC-ZlZ"/>
+                            <constraint firstItem="gTf-tb-c2u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="Mmk-IZ-oXk"/>
+                            <constraint firstItem="4gW-0x-IP1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Zdc-kF-EZN"/>
+                            <constraint firstItem="Dmd-fo-EdS" firstAttribute="centerX" secondItem="fc6-fN-hEu" secondAttribute="centerX" id="aCo-Vn-Ipp"/>
+                            <constraint firstItem="gTf-tb-c2u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="ckE-3b-P0u"/>
+                            <constraint firstItem="gTf-tb-c2u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPx-Oq-cAw"/>
+                            <constraint firstItem="Dmd-fo-EdS" firstAttribute="top" secondItem="4gW-0x-IP1" secondAttribute="bottom" constant="46" id="pjq-WQ-mq6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sP2-Ju-ju6"/>
@@ -68,7 +64,7 @@
                         <outlet property="btnCheckIt" destination="Dmd-fo-EdS" id="azL-ya-S54"/>
                         <outlet property="firstLabel" destination="gTf-tb-c2u" id="XcH-I9-YRg"/>
                         <outlet property="txtPassword" destination="4gW-0x-IP1" id="5IH-mg-Ri6"/>
-                        <segue destination="a1N-Nd-Ncs" kind="show" id="C3g-bq-H7a"/>
+                        <segue destination="a1N-Nd-Ncs" kind="show" identifier="toSecondViewController" id="C3g-bq-H7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -83,8 +79,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İkinci View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHN-g8-mgk">
-                                <rect key="frame" x="97" y="133" width="199" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHN-g8-mgk">
+                                <rect key="frame" x="85.333333333333329" y="133" width="222.66666666666669" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,7 +131,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C3g-bq-H7a"/>
+        <segue reference="zod-xH-6CL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

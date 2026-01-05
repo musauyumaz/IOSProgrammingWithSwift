@@ -10,6 +10,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var lblFoundPassword: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

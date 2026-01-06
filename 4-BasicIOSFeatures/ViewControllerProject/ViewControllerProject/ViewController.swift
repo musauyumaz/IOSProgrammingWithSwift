@@ -16,9 +16,28 @@ class ViewController: UIViewController {
     var receivedPassword = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad")
+        txtPassword.text = ""
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+    }
+    
+    
     @IBAction func btnCheckItClicked(_ sender: Any) {
         
         receivedPassword = txtPassword.text!

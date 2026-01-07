@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaultsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write Your Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiA-Kq-lEJ">
+                                <rect key="frame" x="40" y="129" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="grI-0k-hTx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="When will you do it?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHb-Mu-M8L">
+                                <rect key="frame" x="40" y="193" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="yTs-Jb-nKm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkz-Gb-G7s">
+                                <rect key="frame" x="62" y="276" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="btnSaveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y7j-oY-twA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUT-5R-fYw">
+                                <rect key="frame" x="261" y="276" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDeleteClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Npg-qf-qje"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work to be done" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7y-Hy-10b">
+                                <rect key="frame" x="40" y="338" width="162" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to do it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-fs-kpn">
+                                <rect key="frame" x="220" y="354" width="140" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="DRO-sG-0sk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J7y-Hy-10b" secondAttribute="bottom" constant="355" id="0Mi-6i-CNs"/>
+                            <constraint firstItem="oiA-Kq-lEJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="23t-3T-214"/>
+                            <constraint firstItem="DTH-fs-kpn" firstAttribute="leading" secondItem="J7y-Hy-10b" secondAttribute="trailing" constant="18" id="3hD-4I-tY3"/>
+                            <constraint firstItem="Qkz-Gb-G7s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="J6g-7c-Kb9"/>
+                            <constraint firstItem="DTH-fs-kpn" firstAttribute="top" secondItem="bUT-5R-fYw" secondAttribute="bottom" constant="43" id="L29-iG-6M6"/>
+                            <constraint firstItem="Qkz-Gb-G7s" firstAttribute="top" secondItem="bHb-Mu-M8L" secondAttribute="bottom" constant="49" id="LNs-rH-CuS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bUT-5R-fYw" secondAttribute="trailing" constant="58" id="Ogw-hz-ucQ"/>
+                            <constraint firstItem="bHb-Mu-M8L" firstAttribute="top" secondItem="oiA-Kq-lEJ" secondAttribute="bottom" constant="30" id="Vch-Kg-hDZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oiA-Kq-lEJ" secondAttribute="trailing" constant="33" id="X4n-gL-uvU"/>
+                            <constraint firstItem="bHb-Mu-M8L" firstAttribute="leading" secondItem="J7y-Hy-10b" secondAttribute="leading" id="Xw1-O6-Q6v"/>
+                            <constraint firstItem="oiA-Kq-lEJ" firstAttribute="trailing" secondItem="bHb-Mu-M8L" secondAttribute="trailing" id="hPb-Uw-tU5"/>
+                            <constraint firstItem="J7y-Hy-10b" firstAttribute="top" secondItem="Qkz-Gb-G7s" secondAttribute="bottom" constant="27" id="j22-hN-1Ee"/>
+                            <constraint firstItem="oiA-Kq-lEJ" firstAttribute="leading" secondItem="bHb-Mu-M8L" secondAttribute="leading" id="kVg-uw-jpy"/>
+                            <constraint firstItem="J7y-Hy-10b" firstAttribute="centerY" secondItem="DTH-fs-kpn" secondAttribute="centerY" id="ksl-Zo-BHv"/>
+                            <constraint firstItem="bHb-Mu-M8L" firstAttribute="trailing" secondItem="DTH-fs-kpn" secondAttribute="trailing" id="ojW-ek-4Ze"/>
+                            <constraint firstItem="oiA-Kq-lEJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="p6v-WA-6U8"/>
+                            <constraint firstItem="bUT-5R-fYw" firstAttribute="baseline" secondItem="Qkz-Gb-G7s" secondAttribute="firstBaseline" id="wzL-fF-ll2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNote" destination="J7y-Hy-10b" id="S42-Wg-BkA"/>
+                        <outlet property="lblTime" destination="DTH-fs-kpn" id="YOI-tM-ya7"/>
+                        <outlet property="txtNote" destination="oiA-Kq-lEJ" id="jVe-Yw-wzf"/>
+                        <outlet property="txtTime" destination="bHb-Mu-M8L" id="6jl-Ac-L9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

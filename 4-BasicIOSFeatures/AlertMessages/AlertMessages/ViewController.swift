@@ -19,7 +19,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSignUpClicked(_ sender: Any) {
-        let alertMessage = UIAlertController(title: "Hata Mesajı!", message: "Email Yanlış verildi", preferredStyle: .alert)
+        
+        if txtEmail.text?.isEmpty == true{
+            alert(title: "Hata Mesajı", message: "Email boş bırakılamaz")
+        }else if txtPassword.text?.isEmpty == true{
+            alert(title: "Hata Mesajı", message: "Parola boş bırakılamaz")
+        }else if txtPassword.text != txtPasswordAgain.text{
+            alert(title: "Hata Mesajı", message: "Parolalar Uyuşmamaktadır")
+        }
+        
+        alert(title: "Tebrikler!", message: "Kullanıcı Oluşturuldu.")
+    }
+    
+    func alert(title: String, message: String){
+        let alertMessage = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { UIAlertAction in
             print("OK button tıklandı")

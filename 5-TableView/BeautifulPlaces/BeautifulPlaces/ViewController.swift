@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    var beautifulPlaces: Dictionary<String, String> = [:]
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,22 +17,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         tableView.delegate = self
         
-        var beautifulPlaces: Dictionary<String, String> = [:]
-        beautifulPlaces["Sazova Parki"] = "sazova"
-        beautifulPlaces["Galata Kulesi"] = "galata"
-        beautifulPlaces["Kiz Kulesi"] = "kizkulesi"
-        beautifulPlaces["Pamukkale"] = "pamukkale"
-        beautifulPlaces["Uzungol"] = "uzungol"
+        self.beautifulPlaces["Eskişehir - Sazova Parkı"] = "sazova"
+        self.beautifulPlaces["İstanbul - Galata Kulesi"] = "galata"
+        self.beautifulPlaces["İstanbul - Kız Kulesi"] = "kizkulesi"
+        self.beautifulPlaces["Denizli - Pamukkale Travertenleri"] = "pamukkale"
+        self.beautifulPlaces["Trabzon - Uzungöl"] = "uzungol"
         
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.beautifulPlaces.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.text = beautifulPlaces.keys.sorted()[indexPath.row]
         return cell
     }
     

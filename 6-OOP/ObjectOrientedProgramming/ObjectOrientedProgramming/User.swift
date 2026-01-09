@@ -9,7 +9,14 @@ import Foundation
 
 class User{
     
-    var name = ""
-    var age = 0
-    var job = ""
+    var name : String
+    var age : Int
+    var job : String
+    
+    init(name: String, age: Int, job: String) {
+        print("init çağırıldı")
+        self.name = name
+        self.age = age
+        self.job = job
+    }
 }

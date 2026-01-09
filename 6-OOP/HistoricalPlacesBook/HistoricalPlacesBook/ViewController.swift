@@ -16,21 +16,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        historicalPlaces.append(HistoricalPlace(name: "Taj Mahal", city: "Agra ,Hindistan", image: "tajMahal"))
-        historicalPlaces.append(HistoricalPlace(name: "Water Castle", city: "Montpellier ,France", image: "waterCastle"))
-        historicalPlaces.append(HistoricalPlace(name: "Jama Masjid", city: "Ahmedabad ,India", image: "jamaMasjit"))
+        historicalPlaces.append(HistoricalPlace(name: "Taj Mahal", city: "Agra ,Hindistan", image: "tajmahal"))
+        historicalPlaces.append(HistoricalPlace(name: "Water Castle", city: "Montpellier ,France", image: "watercastle"))
+        historicalPlaces.append(HistoricalPlace(name: "Jama Masjid", city: "Ahmedabad ,India", image: "jama"))
         historicalPlaces.append(HistoricalPlace(name: "Topkapı Sarayı", city: "İstanbul ,Türkiye", image: "topkapi"))
         historicalPlaces.append(HistoricalPlace(name: "Ayasofya", city: "İstanbul ,Türkiye", image: "ayasofya"))
         historicalPlaces.append(HistoricalPlace(name: "Sultan Ahmet Camii", city: "İstanbul ,Türkiye", image: "sultanahmet"))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return historicalPlaces.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let historicalPlace : HistoricalPlace = historicalPlaces[indexPath.row]
+        
+        cell.textLabel?.text = historicalPlace.name
+        cell.detailTextLabel?.text = historicalPlace.city
+        
+        return cell
     }
+    
     
 
 

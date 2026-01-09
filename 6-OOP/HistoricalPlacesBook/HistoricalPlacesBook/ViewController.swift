@@ -11,6 +11,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     var historicalPlaces : [HistoricalPlace] = []
+    var selectedHistoricalPlace : HistoricalPlace?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         historicalPlaces.append(HistoricalPlace(name: "Topkapı Sarayı", city: "İstanbul ,Türkiye", image: "topkapi"))
         historicalPlaces.append(HistoricalPlace(name: "Ayasofya", city: "İstanbul ,Türkiye", image: "ayasofya"))
         historicalPlaces.append(HistoricalPlace(name: "Sultan Ahmet Camii", city: "İstanbul ,Türkiye", image: "sultanahmet"))
+        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,14 +33,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        let cell : UITableViewCell = UITableViewCell()
         let historicalPlace : HistoricalPlace = historicalPlaces[indexPath.row]
-        
         cell.textLabel?.text = historicalPlace.name
         cell.detailTextLabel?.text = historicalPlace.city
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedHistoricalPlace = historicalPlaces[indexPath.row]
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetailsViewController
+            destinationVC.choosePlace = selectedHistoricalPlace
+        }
     }
     
     

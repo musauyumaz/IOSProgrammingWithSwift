@@ -13,10 +13,14 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var lblHistoricalPlace: UILabel!
     @IBOutlet weak var lblCity: UILabel!
     
+    var choosePlace : HistoricalPlace?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.image = UIImage(named: choosePlace?.image ?? "ayasofya")
+        lblHistoricalPlace.text = choosePlace?.name
+        lblCity.text = choosePlace?.city
     }
 
 }

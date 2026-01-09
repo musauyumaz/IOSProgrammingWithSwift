@@ -7,16 +7,28 @@
 
 import Foundation
 
+
+enum UserType{
+    case admin
+    case user
+    case unauthorized
+}
+
 class User{
-    
     var name : String
     var age : Int
     var job : String
+    var type : UserType
     
-    init(name: String, age: Int, job: String) {
+    init(name: String, age: Int, job: String, type: UserType) {
         print("init çağırıldı")
         self.name = name
         self.age = age
         self.job = job
+        self.type = type
+    }
+    
+    func exampleFunction(){
+        print("exampleFunction is called")
     }
 }

@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  KPSSTracker
+//  ShoppingList
 //
 //  Created by MUSA UYUMAZ on 10.01.2026.
 //

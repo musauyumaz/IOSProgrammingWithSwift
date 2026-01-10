@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		F15E48CF2F1282530012CEFE /* KPSSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPSSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15E48F32F1289C20012CEFE /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F15E48E42F1282540012CEFE /* Exceptions for "KPSSTracker" folder in "KPSSTracker" target */ = {
+		F15E49082F1289C30012CEFE /* Exceptions for "ShoppingList" folder in "ShoppingList" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = F15E48CE2F1282530012CEFE /* KPSSTracker */;
+			target = F15E48F22F1289C20012CEFE /* ShoppingList */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F15E48D12F1282530012CEFE /* KPSSTracker */ = {
+		F15E48F52F1289C20012CEFE /* ShoppingList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F15E48E42F1282540012CEFE /* Exceptions for "KPSSTracker" folder in "KPSSTracker" target */,
+				F15E49082F1289C30012CEFE /* Exceptions for "ShoppingList" folder in "ShoppingList" target */,
 			);
-			path = KPSSTracker;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F15E48CC2F1282530012CEFE /* Frameworks */ = {
+		F15E48F02F1289C20012CEFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F15E48C62F1282530012CEFE = {
+		F15E48EA2F1289C20012CEFE = {
 			isa = PBXGroup;
 			children = (
-				F15E48D12F1282530012CEFE /* KPSSTracker */,
-				F15E48D02F1282530012CEFE /* Products */,
+				F15E48F52F1289C20012CEFE /* ShoppingList */,
+				F15E48F42F1289C20012CEFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F15E48D02F1282530012CEFE /* Products */ = {
+		F15E48F42F1289C20012CEFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F15E48CF2F1282530012CEFE /* KPSSTracker.app */,
+				F15E48F32F1289C20012CEFE /* ShoppingList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F15E48CE2F1282530012CEFE /* KPSSTracker */ = {
+		F15E48F22F1289C20012CEFE /* ShoppingList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F15E48E52F1282540012CEFE /* Build configuration list for PBXNativeTarget "KPSSTracker" */;
+			buildConfigurationList = F15E49092F1289C30012CEFE /* Build configuration list for PBXNativeTarget "ShoppingList" */;
 			buildPhases = (
-				F15E48CB2F1282530012CEFE /* Sources */,
-				F15E48CC2F1282530012CEFE /* Frameworks */,
-				F15E48CD2F1282530012CEFE /* Resources */,
+				F15E48EF2F1289C20012CEFE /* Sources */,
+				F15E48F02F1289C20012CEFE /* Frameworks */,
+				F15E48F12F1289C20012CEFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F15E48D12F1282530012CEFE /* KPSSTracker */,
+				F15E48F52F1289C20012CEFE /* ShoppingList */,
 			);
-			name = KPSSTracker;
+			name = ShoppingList;
 			packageProductDependencies = (
 			);
-			productName = KPSSTracker;
-			productReference = F15E48CF2F1282530012CEFE /* KPSSTracker.app */;
+			productName = ShoppingList;
+			productReference = F15E48F32F1289C20012CEFE /* ShoppingList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F15E48C72F1282530012CEFE /* Project object */ = {
+		F15E48EB2F1289C20012CEFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					F15E48CE2F1282530012CEFE = {
+					F15E48F22F1289C20012CEFE = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = F15E48CA2F1282530012CEFE /* Build configuration list for PBXProject "KPSSTracker" */;
+			buildConfigurationList = F15E48EE2F1289C20012CEFE /* Build configuration list for PBXProject "ShoppingList" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = F15E48C62F1282530012CEFE;
+			mainGroup = F15E48EA2F1289C20012CEFE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F15E48D02F1282530012CEFE /* Products */;
+			productRefGroup = F15E48F42F1289C20012CEFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F15E48CE2F1282530012CEFE /* KPSSTracker */,
+				F15E48F22F1289C20012CEFE /* ShoppingList */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F15E48CD2F1282530012CEFE /* Resources */ = {
+		F15E48F12F1289C20012CEFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F15E48CB2F1282530012CEFE /* Sources */ = {
+		F15E48EF2F1289C20012CEFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F15E48E62F1282540012CEFE /* Debug */ = {
+		F15E490A2F1289C30012CEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A46GN2924M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KPSSTracker/Info.plist;
+				INFOPLIST_FILE = ShoppingList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.musauyumaz.KPSSTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musauyumaz.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -170,7 +170,7 @@
 			};
 			name = Debug;
 		};
-		F15E48E72F1282540012CEFE /* Release */ = {
+		F15E490B2F1289C30012CEFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -179,7 +179,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A46GN2924M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KPSSTracker/Info.plist;
+				INFOPLIST_FILE = ShoppingList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -190,7 +190,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.musauyumaz.KPSSTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musauyumaz.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -202,7 +202,7 @@
 			};
 			name = Release;
 		};
-		F15E48E82F1282540012CEFE /* Debug */ = {
+		F15E490C2F1289C30012CEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		F15E48E92F1282540012CEFE /* Release */ = {
+		F15E490D2F1289C30012CEFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,25 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F15E48CA2F1282530012CEFE /* Build configuration list for PBXProject "KPSSTracker" */ = {
+		F15E48EE2F1289C20012CEFE /* Build configuration list for PBXProject "ShoppingList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F15E48E82F1282540012CEFE /* Debug */,
-				F15E48E92F1282540012CEFE /* Release */,
+				F15E490C2F1289C30012CEFE /* Debug */,
+				F15E490D2F1289C30012CEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F15E48E52F1282540012CEFE /* Build configuration list for PBXNativeTarget "KPSSTracker" */ = {
+		F15E49092F1289C30012CEFE /* Build configuration list for PBXNativeTarget "ShoppingList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F15E48E62F1282540012CEFE /* Debug */,
-				F15E48E72F1282540012CEFE /* Release */,
+				F15E490A2F1289C30012CEFE /* Debug */,
+				F15E490B2F1289C30012CEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F15E48C72F1282530012CEFE /* Project object */;
+	rootObject = F15E48EB2F1289C20012CEFE /* Project object */;
 }
